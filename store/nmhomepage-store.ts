@@ -1,0 +1,2 @@
+import { makeAutoObservable } from 'mobx';
+

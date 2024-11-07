@@ -1,0 +1,26 @@
+{
+    "default": {
+        "formatOptions": {
+            "snippetInterface": "async-await",
+            "resultsDir": "allure-results"
+        },
+        "paths": [
+            "test/*.feature"
+        ],
+        "dryRun": false,
+        "require": [
+            "support/*.ts",
+            "steps/*.ts"
+        ],
+        "requireModule": [
+            "ts-node/register"
+        ],
+        "format": [
+            "allure-cucumberjs/reporter",
+            "html:cucumber-report.html",
+            "progress-bar"
+        ],
+        "parallel": 1,
+        "reporter": [["line"], ["allure-playwright"]]
+    }
+}

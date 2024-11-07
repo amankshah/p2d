@@ -1,0 +1,1 @@
+export { default } from "allure-cucumberjs/reporter";
